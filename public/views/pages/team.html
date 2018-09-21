@@ -1,0 +1,68 @@
+<!-- <div class="row">
+      <div class="col-xs-12">
+        <nav>
+          <ol class="breadcrumb-list">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Household Plants</a></li>
+            <li class="breadcrumb-item active">Bonsai</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <div class="grid product">
+      <div class="column-xs-12 column-md-7">
+        <div class="product-gallery">
+          <div class="product-image">
+            <img class="active" src="https://source.unsplash.com/W1yjvf5idqA">
+          </div>
+        </div>
+      </div>
+      <div class="column-xs-12 column-md-5">
+        <h1>{{team.teamName}}</h1>
+        <h2>{{team.count}}/{{team.limit}}</h2>
+        <h6 ng-if="team.type==0"><i>One Time</i></h4>
+        <h6 ng-if="team.type!=0"><i>Subscription-based</i></h4>
+        <div class="description">
+          <p>{{team.desc}}</p>
+        </div>
+        <button class="add-to-cart">I want in!</button>
+      </div>
+    </div>
+ -->
+
+ <style type="text/css">
+   .team_box{
+      background-color: #fff;
+      box-shadow: 0 2px 15px rgba(0,0,0,.5);
+      padding: 20px 10px;
+   }
+   #prod_img{
+    width:100%;
+    height: 100%;
+   }
+ </style>
+
+<div class="row">
+  <div class="col-md-1"></div>
+  <div class="col-md-10">
+      <div class="team_box">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <img id='prod_img' src="https://source.unsplash.com/W1yjvf5idqA">
+          </div>
+          <div class="col-12 col-md-6">
+            <h1>{{team.teamName}}</h1>
+        <h2>{{team.count}}/{{team.limit}}</h2>
+        <h6 ng-if="team.type==0"><i>One Time</i></h4>
+        <h6 ng-if="team.type!=0"><i>Subscription-based</i></h4>
+        <div class="description">
+          <p>{{team.desc}}</p>
+        </div>
+        <button class="btn btn-success">I want in!</button>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="col-md-1"></div>
+</div>
+

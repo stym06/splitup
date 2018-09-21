@@ -1,0 +1,42 @@
+
+<style type="text/css">
+
+</style>
+
+<div class="row">
+  <div class="col-md-4">
+    
+    <div class="list-group sticky-top2">
+      <a href="#" class="bootstrap list-group-item list-group-item-action active">One-Time</a>
+      <a href="#" class="bootstrap list-group-item list-group-item-action">Subscription-Based</a>
+    </div>
+
+  </div>
+
+  <div class="col-xs-12 col-md-8">
+    <center><p id="highlight">Available Groups</p></center>
+    <div class="row">
+
+      <div class="col-xs-6 col-md-4" ng-repeat="item in home.teamData.groups">
+        <!-- Card starts -->
+        <div class="card-deck text-center">
+          <div class="card">
+            <a href="/team/{{item.id}}"><img class="card-img-top" src="assets/group.png" alt="Card image cap"></a>
+            <div class="card-body">
+              <h5 class="card-title">{{item.name}}</h5>
+              <p class="card-text" ng-if="item.type==0"><i>(One Time)</i></p>
+              <p class="card-text" ng-if="item.type!=0"><i>(Subscription-based)</i></p>
+              <p class="card-text">{{item.count}} / {{item.limit}} </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div><br>
+        <!-- Card ends -->
+      </div>
+
+    </div>
+
+  </div>
+</div>
