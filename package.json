@@ -21,7 +21,7 @@
     "joi": "^13.6.0",
     "jsonwebtoken": "^8.3.0",
     "knex": ">=0.19.5",
-    "mongoose": "^5.2.15",
+    "mongoose": "^5.10.9",
     "morgan": "^1.9.1",
     "mysql": "^2.16.0",
     "passport": "^0.4.0",
