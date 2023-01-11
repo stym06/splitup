@@ -20,7 +20,7 @@
     "express-session": "^1.15.6",
     "joi": "^13.6.0",
     "jsonwebtoken": "^8.3.0",
-    "knex": "^0.21.6",
+    "knex": "^2.4.0",
     "mongoose": "^5.10.9",
     "morgan": "^1.9.1",
     "mysql": "^2.18.1",
